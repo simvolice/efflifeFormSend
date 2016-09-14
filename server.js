@@ -24,18 +24,11 @@ app.use(express.static('public'));
 
 // ROUTES FOR OUR API
 // =============================================================================
-var router = express.Router();              // get an instance of the express Router
-
+var router = express.Router();
 
 /**
  * Отправляем форму на mailgun
  */
-
-
-
-
-
-
 router.post('/sendform', function(req, res) {
 
 
@@ -57,10 +50,7 @@ router.post('/sendform', function(req, res) {
 
 
 
-// more routes for our API will happen here
 
-// REGISTER OUR ROUTES -------------------------------
-// all of our routes will be prefixed with /api
 app.use('/api', router);
 
 // START THE SERVER
